@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>
+           get values from form
+        </title>
+    </head>
+    <body>
+        <h1>
+         Form
+        </h1>
+        <form  id="f1" onsubmit="myfunction()" >
+        <input type="text" name="fname"  value="ravi" placeholder="first name" id="f.name"><br>
+    
+        <input type="text" name="lname" value="bharathi" placeholder="lastname" id="l.name"><br>
+        <input type="submit" value="submit">
+        
+    </form>
+    </body>
+    <p id="p1">
+        JavaScript is the world's most popular programming language.
+
+JavaScript is the programming language of the Web.
+
+JavaScript is easy to learn.
+
+This tutorial will teach you JavaScript from basic to advanced.
+
+
+    </p>
+    <script>
+        function myfunction(){
+            var x= document.getElementById("f1");
+            for (var i=0;i<x.length;i++){
+                if(x.elements[i].value!="submit"){
+                    console.log(x.elements[i].value)
+                }
+            }
+        }
+        myfunction()
+
+        const color= function(){
+            var a=document.getElementById("p1").style.backgroundColor="red"
+            
+            console.log(a)
+        }
+        color() 
+        
+    </script>
+
+</html>
